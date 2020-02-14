@@ -40,6 +40,20 @@ img:hover{
 	border-radius: 10px;
 	color: #667eea;
 }
+/** Color changing section **/
+#color-changer{
+	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+	min-height: 50vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	font-family: 'Sriracha', cursive;
+	font-style: italic;
+	font-size: calc(60% + 15px);
+	cursor: pointer;
+}
 /*
   ##Device = Desktops
 */
