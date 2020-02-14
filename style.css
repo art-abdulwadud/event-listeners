@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+/** Images section **/
+.heading{
+	font-family: 'Montserrat Subrayada', sans-serif;
+	font-style: italic;
+	text-align: center;
+}
+.image-grid{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+}
+img{
+	max-width: 40vh;
+}
+/** Form Section **/
+#book{
+	list-style-type: square;
+}
+#book{
+	font-family: 'Sriracha', cursive;
+	font-size: calc(60% + 15px);
+}
+#book-entry{
+	border-radius: 10px;
+	font-size: calc(60% + 15px);
+}
+#submit{
+	font-size: calc(60% + 14px);
+	background: black;
+	border: 1px solid white;
+	border-radius: 10px;
+	color: #667eea;
+}
+/*
+  ##Device = Desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+
+/*
+##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/*
+##Device = Tablets, Ipads (portrait)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+ 
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (max-width: 480px) {
+  
+}

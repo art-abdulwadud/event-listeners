@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- Icon near the title -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <title>Event Listeners</title>
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <h1 class="heading">Image Event</h1>
+        <div class="image-grid">
+            <img src="img/bg1.jpg" class="img-fluid" alt="">
+            <img src="img/bg2.jpg" class="img-fluid" alt="">
+            <img src="img/bg3.jpg" class="img-fluid" alt="">
+            <img src="img/bg4.jpg" class="img-fluid" alt="">
+        </div>
+    </section>
+    <section>
+        <h1 class="heading">Form Event</h1>
+        <h4 class="heading">Favorite Books</h4>
+        <ul id="books">
+            <li id="book">Mastering JavaScript</li>
+            <li id="book">JavaScript for Impatient Programmers</li>
+            <li id="book">Confessions of an Economic Hitman</li>
+        </ul>
+        <form action="" class="text-center m-2">
+            <input type="text" id="book-entry">
+            <input type="submit" value="Add Book" id="submit">
+        </form>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="event.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
