@@ -16,8 +16,9 @@ body{
 	grid-template-rows: auto;
 	grid-gap: 10px;
 }
-img{
-	max-width: 40vh;
+img:hover{
+	border: 1px solid gold;
+	border-radius: 10px;
 }
 /** Form Section **/
 #book{
@@ -26,6 +27,7 @@ img{
 #book{
 	font-family: 'Sriracha', cursive;
 	font-size: calc(60% + 15px);
+	text-transform: capitalize;
 }
 #book-entry{
 	border-radius: 10px;

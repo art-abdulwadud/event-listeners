@@ -17,7 +17,7 @@
 </head>
 <body>
     <section>
-        <h1 class="heading">Image Event</h1>
+        <h2 class="heading">onclick Event</h2>
         <div class="image-grid">
             <img src="img/bg1.jpg" class="img-fluid" alt="">
             <img src="img/bg2.jpg" class="img-fluid" alt="">
@@ -26,14 +26,14 @@
         </div>
     </section>
     <section>
-        <h1 class="heading">Form Event</h1>
+        <h1 class="heading">onsubmit Event</h1>
         <h4 class="heading">Favorite Books</h4>
         <ul id="books">
-            <li id="book">Mastering JavaScript</li>
-            <li id="book">JavaScript for Impatient Programmers</li>
-            <li id="book">Confessions of an Economic Hitman</li>
+            <li id="book">mastering JavaScript</li>
+            <li id="book">javaScript for Impatient Programmers</li>
+            <li id="book">confessions of an Economic Hitman</li>
         </ul>
-        <form action="" class="text-center m-2">
+        <form action="" class="text-center m-2" onsubmit="addBook(event)">
             <input type="text" id="book-entry">
             <input type="submit" value="Add Book" id="submit">
         </form>
