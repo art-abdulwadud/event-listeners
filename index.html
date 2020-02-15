@@ -15,7 +15,11 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onscroll="changeColor()">
+    <section>
+        <h2 class="heading">onscroll Event</h2>
+        <p class="book text-center">The body changes background color on scroll</p>
+    </section>
     <section>
         <h2 class="heading">onclick Event</h2>
         <div class="image-grid">
@@ -27,9 +31,9 @@
         <h4 class="heading">onsubmit and onkeydown Event</h4>
         <h6 class="heading">Favorite Books</h6>
         <ul id="books">
-            <li id="book">mastering JavaScript</li>
-            <li id="book">javaScript for Impatient Programmers</li>
-            <li id="book">confessions of an Economic Hitman</li>
+            <li class="book">mastering JavaScript</li>
+            <li class="book">javaScript for Impatient Programmers</li>
+            <li class="book">confessions of an Economic Hitman</li>
         </ul>
         <form action="" class="text-center m-2" onsubmit="addBook(event)">
             <input type="text" id="book-entry">

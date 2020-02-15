@@ -1,8 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
 }
 /** Images section **/
 .heading{
@@ -21,10 +20,10 @@ img:hover{
 	border-radius: 10px;
 }
 /** Form Section **/
-#book{
+#books{
 	list-style-type: square;
 }
-#book{
+.book{
 	font-family: 'Sriracha', cursive;
 	font-size: calc(60% + 15px);
 	text-transform: capitalize;

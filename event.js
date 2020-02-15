@@ -1,6 +1,10 @@
 const colors = ["#fad0c4", "#f99185", " #84fab0", "#30cfd0", "#9795f0"];
 let x = 0;
-let y = 0;
+// The body element changes color on scroll
+const changeColor = () => {
+	x+1 > 1 ? x = 0: x += 1;
+	document.body.style.background = colors[x];
+}
 // Adding an eventListener on an image onclick event
 const allImages = document.querySelectorAll('img');
 allImages.forEach(image => {
@@ -20,7 +24,7 @@ const addBook = (event) => {
 	// Check if input is not empty
 	if(bookName.length != 0){
 		let newBook = document.createElement('li');
-		newBook.setAttribute('id', 'book');
+		newBook.setAttribute('class', 'book');
 		newBook.appendChild(bookName);
 		list.appendChild(newBook);
 		// clearing form
@@ -29,8 +33,8 @@ const addBook = (event) => {
 }
 // change backgournd while typing with onkeydown event
 bookEntry.addEventListener('keydown', () => {
-	y+1 > 4 ? y = 0: y += 1;
-	return bookEntry.style.background = colors[y]
+	x+1 > 4 ? x = 0: x += 1;
+	return bookEntry.style.background = colors[x]
 })
 // Changing color background with onmouseover event
 const colorChanger = document.querySelector('#color-changer');
