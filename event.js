@@ -1,4 +1,4 @@
-// Adding an eventListener on an image
+// Adding an eventListener on an image onclick event
 const allImages = document.querySelectorAll('img');
 allImages.forEach(image => {
 	image.addEventListener('click', () => {
@@ -6,7 +6,7 @@ allImages.forEach(image => {
 	})
 })
 
-// Adding item to a list
+// Adding item to a list with onsubmit event
 const list = document.querySelector('#books');
 const bookEntry = document.querySelector('#book-entry');
 const submit = document.querySelector('#submit');
@@ -21,3 +21,11 @@ const addBook = (event) => {
 		list.appendChild(newBook);
 	}
 }
+// Changing color background with onmouseover event
+const colorChanger = document.querySelector('#color-changer');
+const colors = ["#fad0c4", "#f99185", " #84fab0", "#30cfd0", "#9795f0"];
+let x = 0;
+colorChanger.addEventListener('mouseover',() => {
+	x+1 > 4 ? x = 0: x += 1;
+	return colorChanger.style.background = colors[x]
+})
