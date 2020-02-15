@@ -1,10 +1,5 @@
 # Javascript Event Listeners
 
-## Table of Contents
-
-* [Event listerner](#event-listeners)
-* [Instructions](#instructions)
-
 ## Event listeners
 Events listeners basically wait for a certain event to occur so that other events can be triggered. There many event listeners and only some of them have been used in this project in order to help us understand how they work
 The ones used in this project include:
